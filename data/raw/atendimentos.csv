@@ -1,32 +1,32 @@
-id,nome,idade,cidade,especialidade,status,email,telefone
-1,Bruno Lima,30,Vinhedo,Clinico Geral,Concluido,bruno.lima@email.com,11999990001
-2,Ana Souza,,Campinas,Cardiologia,Agendado,ana.souza@email.com,11999990002
-3,Carlos Mendes,40,Jundiai,Ortopedia,Cancelado,carlos.mendes@email.com,11999990003
-4, Mariana Silva ,35," Valinhos ",Pediatria,Concluido, mariana.silva@email.com ,11999990004
-5,Joao Santos,52,Campinas,Cardiologia,Concluido,joao.santos@email.com,11999990005
-5,Joao Santos,52,Campinas,Cardiologia,Concluido,joao.santos@email.com,11999990005
-6,Pedro Oliveira,28,Campinas,Cardiologia,concluido,pedro.oliveira@email.com,11999990006
-7,Juliana Costa,45,CAMPINAS,cardiologia,AGENDADO,juliana.costa@email.com,11999990007
-8,Marcos Pereira,67, Campinas ,ORTOPEDIA,Cancelado,marcos.pereira@email.com,11999990008
-9,Fernanda Alves,29,Vinhedo,Dermatologia,Concluido,fernanda.alves@email.com,11999990009
-10,Rafael Souza,,Jundiai,Cardiologia,agendado,rafael.souza@email.com,11999990010
-11,Patricia Lima,38,Campinas,Pediatria,CONCLUIDO,patricia.lima@email.com,11999990011
-12,Gabriel Santos,150,Valinhos,Ortopedia,Concluido,gabriel.santos@email.com,11999990012
-13,Beatriz Oliveira,22,Vinhedo,Dermatologia,Cancelado,beatriz.oliveira@email.com,11999990013
-14,Lucas Ferreira,41,Campinas,Cardiologia,Agendado,lucas.ferreira@email.com,11999990014
-15,Amanda Rodrigues,34, Campinas, Pediatria ,Concluido,amanda.rodrigues@email.com,11999990015
-16,Diego Martins,39,JUNDIAI,Ortopedia,concluido,diego.martins@email.com,11999990016
-17,Carolina Gomes,27,Valinhos,Dermatologia,Cancelado,carolina.gomes@email.com,11999990017
-18,Thiago Alves,63,Campinas,Cardiologia,Concluido,thiago.alves@email.com,11999990018
-19,Julio Santos,-5,Vinhedo,Clinico Geral,Agendado,julio.santos@email.com,11999990019
-20,Renata Costa,31,Campinas,Pediatria,Concluido,renata.costa@email.com,11999990020
-21,Mariana Silva,35,Valinhos,Pediatria,Concluido,mariana.silva@email.com,11999990004
-22,Roberto Lima,49,Campinas,Cardiologia,Cancelado,roberto.lima@email.com,11999990021
-23,Isabela Mendes,26,Vinhedo,Dermatologia,Agendado,isabela.mendes@email.com,11999990022
-24,Daniel Souza,58,Campinas,Cardiologia,Concluido,daniel.souza@email.com,11999990023
-25,Vanessa Oliveira,,Valinhos,Pediatria,Agendado,vanessa.oliveira@email.com,11999990024
-26,Andre Pereira,36,Campinas,Ortopedia,Concluido,andre.pereira@email.com,11999990025
-27,Paula Fernandes,43,Vinhedo,Dermatologia,CONCLUIDO,paula.fernandes@email.com,11999990026
-28,Mateus Costa,19,Campinas,Clinico Geral,Cancelado,mateus.costa@email.com,11999990027
-29,Lucas Ferreira,41,Campinas,Cardiologia,Agendado,lucas.ferreira@email.com,11999990014
-30,Joana Alves,33,Valinhos,Pediatria,Concluido,joana.alves@email.com,11999990028
+id,nome,idade,cidade,especialidade,status,email,telefone,data
+1,Bruno Lima,30,Vinhedo,Clinico Geral,Concluido,bruno.lima@email.com,11999990001,2026-01-15
+2,Ana Souza,,Campinas,Cardiologia,Agendado,ana.souza@email.com,11999990002,2026-01-20
+3,Carlos Mendes,40,Jundiai,Ortopedia,Cancelado,carlos.mendes@email.com,11999990003,2026-02-05
+4, Mariana Silva ,35," Valinhos ",Pediatria,Concluido, mariana.silva@email.com ,11999990004,2026-02-10
+5,Joao Santos,52,Campinas,Cardiologia,Concluido,joao.santos@email.com,11999990005,2026-02-15
+5,Joao Santos,52,Campinas,Cardiologia,Concluido,joao.santos@email.com,11999990005,2026-02-15
+6,Pedro Oliveira,28,Campinas,Cardiologia,concluido,pedro.oliveira@email.com,11999990006,2026-02-20
+7,Juliana Costa,45,CAMPINAS,cardiologia,AGENDADO,juliana.costa@email.com,11999990007,2026-03-01
+8,Marcos Pereira,67, Campinas ,ORTOPEDIA,Cancelado,marcos.pereira@email.com,11999990008,2026-03-05
+9,Fernanda Alves,29,Vinhedo,Dermatologia,Concluido,fernanda.alves@email.com,11999990009,2026-03-10
+10,Rafael Souza,,Jundiai,Cardiologia,agendado,rafael.souza@email.com,11999990010,2026-03-15
+11,Patricia Lima,38,Campinas,Pediatria,CONCLUIDO,patricia.lima@email.com,11999990011,2026-03-20
+12,Gabriel Santos,150,Valinhos,Ortopedia,Concluido,gabriel.santos@email.com,11999990012,2026-04-01
+13,Beatriz Oliveira,22,Vinhedo,Dermatologia,Cancelado,beatriz.oliveira@email.com,11999990013,2026-04-05
+14,Lucas Ferreira,41,Campinas,Cardiologia,Agendado,lucas.ferreira@email.com,11999990014,2026-04-10
+15,Amanda Rodrigues,34, Campinas, Pediatria ,Concluido,amanda.rodrigues@email.com,11999990015,2026-04-15
+16,Diego Martins,39,JUNDIAI,Ortopedia,concluido,diego.martins@email.com,11999990016,2026-04-20
+17,Carolina Gomes,27,Valinhos,Dermatologia,Cancelado,carolina.gomes@email.com,11999990017,2026-05-01
+18,Thiago Alves,63,Campinas,Cardiologia,Concluido,thiago.alves@email.com,11999990018,2026-05-05
+19,Julio Santos,-5,Vinhedo,Clinico Geral,Agendado,julio.santos@email.com,11999990019,2026-05-10
+20,Renata Costa,31,Campinas,Pediatria,Concluido,renata.costa@email.com,11999990020,2026-05-15
+21,Mariana Silva,35,Valinhos,Pediatria,Concluido,mariana.silva@email.com,11999990004,2026-05-20
+22,Roberto Lima,49,Campinas,Cardiologia,Cancelado,roberto.lima@email.com,11999990021,2026-06-01
+23,Isabela Mendes,26,Vinhedo,Dermatologia,Agendado,isabela.mendes@email.com,11999990022,2026-06-05
+24,Daniel Souza,58,Campinas,Cardiologia,Concluido,daniel.souza@email.com,11999990023,2026-06-10
+25,Vanessa Oliveira,,Valinhos,Pediatria,Agendado,vanessa.oliveira@email.com,11999990024,2026-06-15
+26,Andre Pereira,36,Campinas,Ortopedia,Concluido,andre.pereira@email.com,11999990025,2026-06-20
+27,Paula Fernandes,43,Vinhedo,Dermatologia,CONCLUIDO,paula.fernandes@email.com,11999990026,2026-07-01
+28,Mateus Costa,19,Campinas,Clinico Geral,Cancelado,mateus.costa@email.com,11999990027,2026-07-05
+29,Lucas Ferreira,41,Campinas,Cardiologia,Agendado,lucas.ferreira@email.com,11999990014,2026-07-10
+30,Joana Alves,33,Valinhos,Pediatria,Concluido,joana.alves@email.com,11999990028,2026-07-15
