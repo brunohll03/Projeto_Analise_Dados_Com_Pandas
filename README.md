@@ -200,10 +200,11 @@ CSV (Processed)
 | `def nome_funcao()` | Define uma função personalizada que pode ser utilizada para executar uma tarefa específica | Estudado |
 | `axis=1` | Define que a operação deve percorrer a tabela DataFrame linha por linha | Estudado |
 | `axis=0` | Define que a operação deve percorrer a tabela DataFrame coluna por coluna | Estudado |
-| `df["coluna"].apply(funcao)` | Acessa uma coluna da tabela DataFrame e aplica uma função personalizada aos valores dessa coluna | Estudado |
-| `df["coluna"].apply(lambda valor: expressao)` | Acessa uma coluna da tabela DataFrame e aplica uma função lambda simples individualmente a cada valor | Estudado |
-| `df.apply(funcao, axis=1)` | Acessa a tabela DataFrame e aplica uma função personalizada percorrendo cada linha | Estudado |
-| `df.apply(funcao, axis=0)` | Acessa a tabela DataFrame e aplica uma função personalizada percorrendo cada coluna | Estudado |
+| `df["coluna"].str.contains()` | Acessa uma coluna de texto e verifica quais valores contêm o texto ou padrão informado | Estudado |
+| `df["coluna"].str.contains("texto", case=False)` | Acessa uma coluna de texto e verifica quais valores contêm o texto informado ignorando letras maiúsculas e minúsculas | Estudado |
+| `df["coluna"].str.contains("texto", na=False)` | Acessa uma coluna de texto e verifica quais valores contêm o texto informado considerando valores ausentes como não encontrados | Estudado |
+| `df["coluna"].str.contains("texto", case=False, na=False)` | Acessa uma coluna de texto e verifica quais valores contêm o texto informado ignorando maiúsculas, minúsculas e valores ausentes | Estudado |
+| `df[~df["coluna"].str.contains("texto")]` | Acessa a tabela DataFrame, filtra uma coluna de texto e localiza os registros que não contêm o texto informado | Estudado |
 | `df.head()` | Exibe as primeiras linhas da tabela DataFrame | Próximo |
 | `df.tail()` | Exibe as últimas linhas da tabela DataFrame | Próximo |
 | `df.sample()` | Exibe registros aleatórios da tabela DataFrame | Próximo |
@@ -212,7 +213,6 @@ CSV (Processed)
 | `df.reset_index()` | Reseta o índice da tabela DataFrame e cria um novo índice sequencial | Próximo |
 | `df.set_index()` | Define uma coluna da tabela DataFrame como índice | Próximo |
 | `df.sort_index()` | Ordena os registros da tabela DataFrame com base no índice | Próximo |
-| `df["coluna"].str.contains()` | Acessa uma coluna de texto e verifica quais valores contêm o texto ou padrão informado | Próximo |
 | `df["coluna"].str.replace()` | Acessa uma coluna de texto e substitui partes dos valores por outro texto | Próximo |
 | `df["coluna"].str.upper()` | Acessa uma coluna de texto e converte todos os caracteres para letras maiúsculas | Próximo |
 | `df["coluna"].str.title()` | Acessa uma coluna de texto e converte os textos para o formato de título | Próximo |
@@ -244,3 +244,32 @@ CSV (Processed)
 | `len()` | Conta quantos elementos ou registros existem | Estudado |
 | `def` | Define uma função personalizada para executar uma tarefa específica | Estudado |
 | `lambda` | Cria uma função simples e anônima para executar uma operação | Estudado |
+
+## Limpeza de dados expectativas base:
+
+| Situação encontrada | Exemplo | O que fazer |
+|---|---|---|
+| Espaços extras | `"  Campinas  "` | Remover espaços das laterais |
+| Maiúsculas e minúsculas | `"CAMPINAS"`, `"Campinas"`, `"campinas"` | Padronizar para um único formato |
+| Texto duplicado | `"cardiologia"`, `"Cardiologia"` | Padronizar para considerar como o mesmo valor |
+| Registro totalmente duplicado | Mesmo paciente e todos os dados repetidos | Remover o registro duplicado |
+| Email duplicado | Dois pacientes com o mesmo email | Investigar e decidir qual registro manter |
+| Idade ausente | `idade = vazio` | Preencher, remover ou manter como ausente, dependendo da regra |
+| Idade inválida | `idade = -5` | Considerar como inválida e corrigir ou transformar em ausente |
+| Idade impossível | `idade = 150` | Considerar como inválida e corrigir ou transformar em ausente |
+| Status inválido | `"canceladoo"` | Corrigir para `"cancelado"` |
+| Status desconhecido | `"???"` | Investigar e corrigir ou marcar como inválido |
+| Email inválido | `"joao.gmail.com"` | Identificar como email potencialmente inválido |
+| Cidade inconsistente | `"São Paulo"`, `"sao paulo"`, `"Sao Paulo"` | Padronizar os valores |
+| Cidade com informação extra | `"Campinas - SP"` | Remover a informação desnecessária, se a regra exigir |
+| Especialidade com erro | `"cardiologoa"` | Corrigir para `"cardiologia"` |
+| Campo numérico como texto | `"25"` | Converter para número |
+| Data como texto | `"24/07/2026"` | Converter para formato de data |
+| Data inválida | `"32/15/2026"` | Identificar e corrigir ou considerar inválida |
+| Status ausente | `status = vazio` | Investigar e definir como tratar |
+| Categoria inesperada | Especialidade `"xyz"` | Verificar se é válida ou corrigir |
+| Dados fora da regra | Atendimento com status `"concluido"` sem data de atendimento | Investigar a inconsistência |
+| Registros conflitantes | Mesmo email com nomes diferentes | Investigar qual informação é correta |
+| Valores ausentes excessivos | Muitas idades vazias | Avaliar a qualidade da coluna antes de preencher |
+| Coluna desnecessária | Coluna sem utilidade para a análise | Avaliar a possibilidade de remover |
+| Dados após limpeza | Ainda existem duplicados ou valores inválidos | Fazer uma nova validação |
