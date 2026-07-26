@@ -119,122 +119,105 @@ CSV (Processed)
 
 ## Comandos e Métodos do Pandas
 
-| Comando / Método | O que faz | Status |
-|---|---|---|
-| `import pandas as pd` | Importa a biblioteca Pandas | Estudado |
-| `pd.read_csv()` | Lê um arquivo CSV e cria uma tabela DataFrame | Estudado |
-| `df` | Exibe a tabela DataFrame | Estudado |
-| `df.shape` | Mostra a quantidade de linhas e colunas da tabela DataFrame | Estudado |
-| `df.info()` | Mostra informações da tabela DataFrame, como colunas, tipos de dados e valores não nulos | Estudado |
-| `df.describe()` | Gera um resumo estatístico das colunas numéricas da tabela DataFrame | Estudado |
-| `df.isnull()` | Verifica na tabela DataFrame quais valores estão ausentes | Estudado |
-| `df.isnull().sum()` | Verifica na tabela DataFrame e conta quantos valores ausentes existem em cada coluna | Estudado |
-| `df["coluna"]` | Acessa na tabela DataFrame uma coluna específica | Estudado |
-| `df["coluna"].unique()` | Acessa uma coluna da tabela DataFrame e mostra quais valores únicos existem nela | Estudado |
-| `df["coluna"].value_counts()` | Acessa uma coluna da tabela DataFrame e conta quantas vezes cada valor aparece | Estudado |
-| `df["coluna"].value_counts().idxmax()` | Acessa uma coluna, conta a frequência dos valores e retorna o valor que aparece mais vezes | Estudado |
-| `df["coluna"].value_counts().max()` | Acessa uma coluna, conta a frequência dos valores e retorna a maior quantidade encontrada | Estudado |
-| `len(df)` | Conta quantos registros existem na tabela DataFrame | Estudado |
-| `df["coluna"].mean()` | Acessa uma coluna da tabela DataFrame e calcula a média dos valores | Estudado |
-| `df["coluna"].median()` | Acessa uma coluna da tabela DataFrame e calcula a mediana dos valores | Estudado |
-| `df["coluna"].min()` | Acessa uma coluna da tabela DataFrame e retorna o menor valor encontrado | Estudado |
-| `df["coluna"].max()` | Acessa uma coluna da tabela DataFrame e retorna o maior valor encontrado | Estudado |
-| `df["coluna"].sum()` | Acessa uma coluna da tabela DataFrame e soma todos os valores | Estudado |
-| `df["coluna"].std()` | Acessa uma coluna da tabela DataFrame e calcula o desvio padrão dos valores | Estudado |
-| `df["coluna"].var()` | Acessa uma coluna da tabela DataFrame e calcula a variância dos valores | Estudado |
-| `df["coluna"].count()` | Acessa uma coluna da tabela DataFrame e conta quantos valores não são nulos | Estudado |
-| `df["coluna"].nunique()` | Acessa uma coluna da tabela DataFrame e conta quantos valores diferentes existem | Estudado |
-| `df["coluna"].first()` | Acessa uma coluna da tabela DataFrame e retorna o primeiro valor encontrado | Estudado |
-| `df["coluna"].last()` | Acessa uma coluna da tabela DataFrame e retorna o último valor encontrado | Estudado |
-| `df["coluna"].prod()` | Acessa uma coluna da tabela DataFrame e multiplica todos os valores | Estudado |
-| `df["coluna"].sem()` | Acessa uma coluna da tabela DataFrame e calcula o erro padrão da média | Estudado |
-| `df["coluna"].quantile()` | Acessa uma coluna da tabela DataFrame e calcula um quantil dos valores | Estudado |
-| `df["coluna"].agg()` | Acessa uma coluna da tabela DataFrame e aplica uma ou várias funções de agregação | Estudado |
-| `df.groupby()` | Agrupa os registros da tabela DataFrame com base em uma ou mais colunas | Estudado |
-| `df.groupby().size()` | Agrupa os registros da tabela DataFrame e conta quantos registros existem em cada grupo | Estudado |
-| `df.groupby().count()` | Agrupa os registros da tabela DataFrame e conta os valores não nulos de cada grupo | Estudado |
-| `df.groupby().mean()` | Agrupa os registros da tabela DataFrame e calcula a média de cada grupo | Estudado |
-| `df.groupby().agg()` | Agrupa os registros da tabela DataFrame e aplica várias funções de agregação em cada grupo | Estudado |
-| `df.groupby(["coluna1", "coluna2"])` | Agrupa os registros da tabela DataFrame considerando duas ou mais colunas | Estudado |
-| `.unstack()` | Transforma níveis do índice do resultado em colunas | Estudado |
-| `.unstack(fill_value=0)` | Transforma níveis do índice em colunas e preenche valores ausentes com zero | Estudado |
-| `df.sort_values()` | Ordena os registros da tabela DataFrame com base nos valores de uma coluna | Estudado |
-| `df.sort_values(ascending=False)` | Ordena os registros da tabela DataFrame do maior valor para o menor | Estudado |
-| `df.sort_values(["coluna1", "coluna2"])` | Ordena os registros da tabela DataFrame usando duas ou mais colunas | Estudado |
-| `df[df["coluna"] > valor]` | Acessa a tabela DataFrame e filtra os registros que possuem na coluna um valor maior que o informado | Estudado |
-| `df[df["coluna"] == valor]` | Acessa a tabela DataFrame e filtra os registros que possuem na coluna o valor informado | Estudado |
-| `&` | Combina duas condições e exige que ambas sejam verdadeiras | Estudado |
-| `\|` | Combina duas condições e permite que pelo menos uma seja verdadeira | Estudado |
-| `~` | Nega uma condição e seleciona os valores que não atendem ao filtro informado | Estudado |
-| `df.loc[]` | Acessa a tabela DataFrame e localiza registros e colunas específicos | Estudado |
-| `df.loc[condição]` | Acessa a tabela DataFrame e localiza os registros que atendem a uma condição | Estudado |
-| `df.loc[condição, ["coluna1", "coluna2"]]` | Acessa a tabela DataFrame, localiza os registros que atendem à condição e seleciona as colunas informadas | Estudado |
-| `df.loc[condição, "coluna"] = valor` | Acessa a tabela DataFrame, localiza os registros que atendem à condição e altera o valor da coluna informada | Estudado |
-| `df["coluna"].duplicated()` | Acessa uma coluna da tabela DataFrame e identifica quais valores estão duplicados | Estudado |
-| `df["coluna"].duplicated(keep=False)` | Acessa uma coluna da tabela DataFrame e identifica todos os registros que possuem valores duplicados | Estudado |
-| `df.drop_duplicates()` | Remove da tabela DataFrame os registros duplicados | Estudado |
-| `df.drop_duplicates(subset="coluna")` | Remove da tabela DataFrame os registros duplicados considerando uma coluna específica | Estudado |
-| `df.drop_duplicates(subset="coluna", keep="first")` | Remove da tabela DataFrame os registros duplicados e mantém o primeiro registro encontrado | Estudado |
-| `.str.strip()` | Acessa os valores de texto e remove os espaços no início e no final | Estudado |
-| `.str.lower()` | Acessa os valores de texto e converte todos os caracteres para letras minúsculas | Estudado |
-| `.fillna()` | Localiza valores ausentes e preenche esses valores com a informação definida | Estudado |
-| `pd.NA` | Representa um valor ausente nos dados | Estudado |
-| `df["coluna"].quantile(0.25)` | Acessa uma coluna da tabela DataFrame e calcula o valor que representa 25% dos dados | Estudado |
-| `df["coluna"].quantile(0.50)` | Acessa uma coluna da tabela DataFrame e calcula o valor que representa 50% dos dados, equivalente à mediana | Estudado |
-| `df["coluna"].quantile(0.75)` | Acessa uma coluna da tabela DataFrame e calcula o valor que representa 75% dos dados | Estudado |
-| `df["coluna"].isin(["valor1", "valor2"])` | Acessa uma coluna da tabela DataFrame e verifica quais registros possuem valores que estão na lista informada | Estudado |
-| `df.loc[df["coluna"].isin(["valor1", "valor2"])]` | Acessa a tabela DataFrame, localiza na coluna os registros que possuem valores presentes na lista informada | Estudado |
-| `~df["coluna"].isin(["valor1", "valor2"])` | Acessa uma coluna da tabela DataFrame e identifica os registros que não possuem valores presentes na lista informada | Estudado |
-| `df["coluna"].between(valor1, valor2)` | Acessa uma coluna da tabela DataFrame e verifica quais valores estão dentro do intervalo informado | Estudado |
-| `df.loc[df["coluna"].between(valor1, valor2)]` | Acessa a tabela DataFrame e localiza os registros que possuem valores dentro do intervalo informado | Estudado |
-| `df["nova_coluna"] = valor` | Acessa a tabela DataFrame, cria uma nova coluna e define um valor para os registros | Estudado |
-| `df.loc[condição, "nova_coluna"] = valor` | Acessa a tabela DataFrame, localiza os registros que atendem à condição e define um valor na nova coluna | Estudado |
-| `df["faixa_etaria"].value_counts()` | Acessa a coluna faixa_etaria e conta quantos usuários existem em cada categoria de idade | Estudado |
-| `df.groupby(["coluna1", "coluna2"]).size()` | Agrupa a tabela DataFrame por duas colunas e conta quantos registros existem em cada combinação | Estudado |
-| `df.groupby(["coluna1", "coluna2"]).size().unstack(fill_value=0)` | Agrupa a tabela DataFrame por duas colunas, conta os registros e transforma uma das categorias em colunas preenchendo valores ausentes com zero | Estudado |
-| `df.groupby("coluna").size().sort_values(ascending=False)` | Agrupa a tabela DataFrame por uma coluna, conta os registros de cada grupo e ordena do maior grupo para o menor | Estudado |
-| `df["coluna"].apply()` | Acessa uma coluna da tabela DataFrame e aplica uma função aos valores dessa coluna | Estudado |
-| `df["coluna"].apply(lambda valor: expressao)` | Acessa uma coluna da tabela DataFrame e aplica uma função simples a cada valor da coluna | Estudado |
-| `df.apply(funcao, axis=1)` | Acessa a tabela DataFrame e aplica uma função percorrendo cada linha da tabela | Estudado |
-| `lambda valor: expressao` | Cria uma função simples que recebe um valor e retorna o resultado de uma expressão | Estudado |
-| `def nome_funcao()` | Define uma função personalizada que pode ser utilizada para executar uma tarefa específica | Estudado |
-| `axis=1` | Define que a operação deve percorrer a tabela DataFrame linha por linha | Estudado |
-| `axis=0` | Define que a operação deve percorrer a tabela DataFrame coluna por coluna | Estudado |
-| `df["coluna"].str.contains()` | Acessa uma coluna de texto e verifica quais valores contêm o texto ou padrão informado | Estudado |
-| `df["coluna"].str.contains("texto", case=False)` | Acessa uma coluna de texto e verifica quais valores contêm o texto informado ignorando letras maiúsculas e minúsculas | Estudado |
-| `df["coluna"].str.contains("texto", na=False)` | Acessa uma coluna de texto e verifica quais valores contêm o texto informado considerando valores ausentes como não encontrados | Estudado |
-| `df["coluna"].str.contains("texto", case=False, na=False)` | Acessa uma coluna de texto e verifica quais valores contêm o texto informado ignorando maiúsculas, minúsculas e valores ausentes | Estudado |
-| `df[~df["coluna"].str.contains("texto")]` | Acessa a tabela DataFrame, filtra uma coluna de texto e localiza os registros que não contêm o texto informado | Estudado |
-| `df.head()` | Exibe as primeiras linhas da tabela DataFrame | Próximo |
-| `df.tail()` | Exibe as últimas linhas da tabela DataFrame | Próximo |
-| `df.sample()` | Exibe registros aleatórios da tabela DataFrame | Próximo |
-| `df.copy()` | Cria uma cópia independente da tabela DataFrame | Próximo |
-| `df.rename()` | Renomeia colunas ou índices da tabela DataFrame | Próximo |
-| `df.reset_index()` | Reseta o índice da tabela DataFrame e cria um novo índice sequencial | Próximo |
-| `df.set_index()` | Define uma coluna da tabela DataFrame como índice | Próximo |
-| `df.sort_index()` | Ordena os registros da tabela DataFrame com base no índice | Próximo |
-| `df["coluna"].str.replace()` | Acessa uma coluna de texto e substitui partes dos valores por outro texto | Próximo |
-| `df["coluna"].str.upper()` | Acessa uma coluna de texto e converte todos os caracteres para letras maiúsculas | Próximo |
-| `df["coluna"].str.title()` | Acessa uma coluna de texto e converte os textos para o formato de título | Próximo |
-| `df["coluna"].astype()` | Acessa uma coluna da tabela DataFrame e converte seus valores para o tipo de dado informado | Próximo |
-| `pd.to_numeric()` | Converte os valores informados para o formato numérico | Próximo |
-| `pd.to_datetime()` | Converte os valores informados para o formato de data e hora | Próximo |
-| `df["data"].dt.year` | Acessa a coluna de data e extrai o ano de cada registro | Próximo |
-| `df["data"].dt.month` | Acessa a coluna de data e extrai o mês de cada registro | Próximo |
-| `df["data"].dt.day` | Acessa a coluna de data e extrai o dia de cada registro | Próximo |
-| `df["coluna"].map()` | Acessa uma Series e aplica uma função individualmente a cada valor | Próximo |
-| `df.replace()` | Acessa a tabela DataFrame e substitui valores específicos por outros valores | Próximo |
-| `df.drop()` | Acessa a tabela DataFrame e remove linhas ou colunas especificadas | Próximo |
-| `df.dropna()` | Acessa a tabela DataFrame e remove registros que possuem valores ausentes | Próximo |
-| `pd.concat()` | Combina duas ou mais tabelas DataFrame ou Series em uma única estrutura | Próximo |
-| `pd.merge()` | Combina tabelas DataFrame usando uma ou mais colunas relacionadas | Próximo |
-| `df.pivot_table()` | Cria uma tabela dinâmica para resumir e analisar os dados | Próximo |
-| `pd.crosstab()` | Cria uma tabela cruzada para analisar a frequência entre duas ou mais variáveis | Próximo |
-| `df.corr()` | Calcula a correlação entre as colunas numéricas da tabela DataFrame | Próximo |
-| `df.memory_usage()` | Mostra quanto de memória cada coluna da tabela DataFrame está utilizando | Próximo |
-| `df.dtypes` | Mostra o tipo de dado armazenado em cada coluna da tabela DataFrame | Próximo |
-| `df.columns` | Mostra os nomes das colunas existentes na tabela DataFrame | Próximo |
-| `df.index` | Mostra os índices dos registros da tabela DataFrame | Próximo |
+| Comando / Método                                    | O que faz                                                                    |
+| --------------------------------------------------- | ---------------------------------------------------------------------------- |
+| `import pandas as pd`                               | Importa a biblioteca Pandas                                                  |
+| `pd.read_csv()`                                     | Lê um arquivo CSV e cria um DataFrame                                        |
+| `df`                                                | Exibe o DataFrame                                                            |
+| `df.shape`                                          | Mostra a quantidade de linhas e colunas                                      |
+| `df.info()`                                         | Mostra informações sobre colunas, tipos de dados e valores não nulos         |
+| `df.describe()`                                     | Gera estatísticas descritivas das colunas numéricas                          |
+| `df.isnull()`                                       | Identifica valores ausentes                                                  |
+| `df.isnull().sum()`                                 | Conta os valores ausentes de cada coluna                                     |
+| `df["coluna"]`                                      | Acessa uma coluna específica                                                 |
+| `df["coluna"].unique()`                             | Mostra os valores únicos de uma coluna                                       |
+| `df["coluna"].value_counts()`                       | Conta a frequência de cada valor                                             |
+| `df["coluna"].value_counts().idxmax()`              | Retorna o valor mais frequente                                               |
+| `df["coluna"].value_counts().max()`                 | Retorna a maior frequência encontrada                                        |
+| `len(df)`                                           | Retorna a quantidade de linhas do DataFrame                                  |
+| `df["coluna"].mean()`                               | Calcula a média                                                              |
+| `df["coluna"].median()`                             | Calcula a mediana                                                            |
+| `df["coluna"].min()`                                | Retorna o menor valor                                                        |
+| `df["coluna"].max()`                                | Retorna o maior valor                                                        |
+| `df["coluna"].sum()`                                | Soma os valores                                                              |
+| `df["coluna"].std()`                                | Calcula o desvio padrão                                                      |
+| `df["coluna"].var()`                                | Calcula a variância                                                          |
+| `df["coluna"].count()`                              | Conta os valores não nulos                                                   |
+| `df["coluna"].nunique()`                            | Conta quantos valores únicos existem                                         |
+| `df["coluna"].first()`                              | Retorna o primeiro valor                                                     |
+| `df["coluna"].last()`                               | Retorna o último valor                                                       |
+| `df["coluna"].prod()`                               | Multiplica todos os valores                                                  |
+| `df["coluna"].sem()`                                | Calcula o erro padrão da média                                               |
+| `df["coluna"].quantile()`                           | Calcula um quantil                                                           |
+| `df["coluna"].agg()`                                | Aplica uma ou várias funções de agregação                                    |
+| `df.groupby()`                                      | Agrupa os dados por uma ou mais colunas                                      |
+| `df.groupby().size()`                               | Conta a quantidade de registros em cada grupo                                |
+| `df.groupby().count()`                              | Conta valores não nulos em cada grupo                                        |
+| `df.groupby().mean()`                               | Calcula a média de cada grupo                                                |
+| `df.groupby().agg()`                                | Aplica várias funções de agregação em cada grupo                             |
+| `df.groupby(["coluna1", "coluna2"])`                | Agrupa os dados usando duas ou mais colunas                                  |
+| `.unstack()`                                        | Transforma níveis de um índice em colunas                                    |
+| `.unstack(fill_value=0)`                            | Transforma níveis do índice em colunas e substitui valores ausentes por zero |
+| `df.sort_values()`                                  | Ordena os registros por uma coluna                                           |
+| `df.sort_values(ascending=False)`                   | Ordena os registros em ordem decrescente                                     |
+| `df.sort_values(["coluna1", "coluna2"])`            | Ordena usando várias colunas                                                 |
+| `df[df["coluna"] > valor]`                          | Filtra registros com base em uma condição                                    |
+| `df[df["coluna"] == valor]`                         | Filtra registros que possuem um valor específico                             |
+| `&`                                                 | Representa uma condição E                                                    |
+| `\|`                                                | Representa uma condição OU                                                   |
+| `df.loc[]`                                          | Permite selecionar e filtrar linhas e colunas                                |
+| `df.loc[condição]`                                  | Filtra linhas usando uma condição                                            |
+| `df.loc[condição, ["coluna1", "coluna2"]]`          | Filtra linhas e seleciona colunas específicas                                |
+| `df.loc[condição, "coluna"] = valor`                | Altera valores de uma coluna quando uma condição é atendida                  |
+| `df["coluna"].duplicated()`                         | Identifica valores duplicados                                                |
+| `df["coluna"].duplicated(keep=False)`               | Identifica todos os registros que possuem valores duplicados                 |
+| `df.drop_duplicates()`                              | Remove registros duplicados                                                  |
+| `df.drop_duplicates(subset="coluna")`               | Remove duplicados considerando uma coluna específica                         |
+| `df.drop_duplicates(subset="coluna", keep="first")` | Remove duplicados mantendo o primeiro registro                               |
+| `.str.strip()`                                      | Remove espaços no início e no final de textos                                |
+| `.str.lower()`                                      | Converte textos para letras minúsculas                                       |
+| `.fillna()`                                         | Preenche valores ausentes                                                    |
+| `pd.NA`                                             | Representa um valor ausente                                                  |
+| `df["coluna"].quantile(0.25)`                       | Calcula o primeiro quartil                                                   |
+| `df["coluna"].quantile(0.50)`                       | Calcula o segundo quartil ou mediana                                         |
+| `df["coluna"].quantile(0.75)`                       | Calcula o terceiro quartil                                                   |
+| `df.head()`                                         | Exibe as primeiras linhas do DataFrame                                       |
+| `df.tail()`                                         | Exibe as últimas linhas do DataFrame                                         |
+| `df.sample()`                                       | Exibe registros aleatórios do DataFrame                                      |
+| `df.copy()`                                         | Cria uma cópia independente do DataFrame                                     |
+| `df.rename()`                                       | Renomeia colunas ou índices                                                  |
+| `df.reset_index()`                                  | Reseta o índice do DataFrame                                                 |
+| `df.set_index()`                                    | Define uma coluna como índice                                                |
+| `df.sort_index()`                                   | Ordena o DataFrame pelo índice                                               |
+| `df["coluna"].isin()`                               | Verifica se os valores pertencem a uma lista de valores                      |
+| `df["coluna"].between()`                            | Filtra valores dentro de um intervalo                                        |
+| `df["coluna"].str.contains()`                       | Verifica se um texto contém determinado padrão                               |
+| `df["coluna"].str.replace()`                        | Substitui partes de textos                                                   |
+| `df["coluna"].str.upper()`                          | Converte textos para letras maiúsculas                                       |
+| `df["coluna"].str.title()`                          | Converte textos para formato de título                                       |
+| `df["coluna"].astype()`                             | Converte o tipo de dados de uma coluna                                       |
+| `pd.to_numeric()`                                   | Converte valores para formato numérico                                       |
+| `pd.to_datetime()`                                  | Converte valores para formato de data e hora                                 |
+| `df["data"].dt.year`                                | Extrai o ano de uma coluna de data                                           |
+| `df["data"].dt.month`                               | Extrai o mês de uma coluna de data                                           |
+| `df["data"].dt.day`                                 | Extrai o dia de uma coluna de data                                           |
+| `df["coluna"].apply()`                              | Aplica uma função aos valores de uma coluna                                  |
+| `df.apply()`                                        | Aplica uma função a linhas ou colunas do DataFrame                           |
+| `df.map()`                                          | Aplica uma função elemento por elemento em uma Series                        |
+| `df.replace()`                                      | Substitui valores específicos                                                |
+| `df.drop()`                                         | Remove linhas ou colunas                                                     |
+| `df.dropna()`                                       | Remove registros que possuem valores ausentes                                |
+| `df.fillna()`                                       | Preenche valores ausentes                                                    |
+| `pd.concat()`                                       | Concatena DataFrames ou Series                                               |
+| `pd.merge()`                                        | Combina DataFrames usando colunas relacionadas                               |
+| `df.pivot_table()`                                  | Cria tabelas dinâmicas para análise                                          |
+| `pd.crosstab()`                                     | Cria tabelas de frequência cruzando variáveis                                |
+| `df.corr()`                                         | Calcula a correlação entre colunas numéricas                                 |
+| `df.memory_usage()`                                 | Mostra o uso de memória do DataFrame                                         |
+| `df.dtypes`                                         | Mostra o tipo de dados de cada coluna                                        |
+| `df.columns`                                        | Mostra os nomes das colunas                                                  |
+| `df.index`                                          | Mostra o índice do DataFrame                                                 |
+
 
 ## Funções Python Utilizadas
 

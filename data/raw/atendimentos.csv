@@ -9,7 +9,7 @@ id,nome,idade,cidade,especialidade,status,email,telefone,data
 7,Juliana Costa,45,CAMPINAS,cardiologia,AGENDADO,juliana.costa@email.com,11999990007,2026-03-01
 8,Marcos Pereira,67, Campinas ,ORTOPEDIA,Cancelado,marcos.pereira@email.com,11999990008,2026-03-05
 9,Fernanda Alves,29,Vinhedo,Dermatologia,Concluido,fernanda.alves@email.com,11999990009,2026-03-10
-10,Rafael Souza,,Jundiai,Cardiologia,agendado,rafael.souza@email.com,11999990010,2026-03-15
+10,Rafael Souza,,Jundiai,Cardiologia,agendado,rafael.souza@email.com,(11) 99999-0001,2026-03-15
 11,Patricia Lima,38,Campinas,Pediatria,CONCLUIDO,patricia.lima@email.com,11999990011,2026-03-20
 12,Gabriel Santos,150,Valinhos,Ortopedia,Concluido,gabriel.santos@email.com,11999990012,2026-04-01
 13,Beatriz Oliveira,22,Vinhedo,Dermatologia,Cancelado,beatriz.oliveira@email.com,11999990013,2026-04-05
