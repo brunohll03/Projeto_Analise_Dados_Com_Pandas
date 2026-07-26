@@ -9,7 +9,7 @@ import pandas as pd                                      # Importa a biblioteca 
 
 def limpar_dados(df):                                    # Função responsável pela limpeza e preparação dos dados
 
-    df["nome_cliente"] = df["nome_cliente"].str.strip().str.title()# Remove espaços extras e converte para formato título
+    df["nome_cliente"] = df["nome_cliente"].str.strip().str.title().str.replace("á", "a").str.replace("à", "a").str.replace("ã", "a").str.replace("â", "a").str.replace("ä", "a").str.replace("é", "e").str.replace("è", "e").str.replace("ê", "e").str.replace("ë", "e").str.replace("í", "i").str.replace("ì", "i").str.replace("î", "i").str.replace("ï", "i").str.replace("ó", "o").str.replace("ò", "o").str.replace("õ", "o").str.replace("ô", "o").str.replace("ö", "o").str.replace("ú", "u").str.replace("ù", "u").str.replace("û", "u").str.replace("ü", "u").str.replace("ç", "c")# Remove espaços extras e converte para formato título
 
     #
 
@@ -23,8 +23,7 @@ def limpar_dados(df):                                    # Função responsável
 
     #
 
-    df["cidade_cliente"] = df["cidade_cliente"].str.strip().str.title()  # Remove espaços extras e converte para formato título
-
+    df["cidade_cliente"] = df["cidade_cliente"].str.strip().str.title().str.replace("á", "a").str.replace("à", "a").str.replace("ã", "a").str.replace("â", "a").str.replace("ä", "a").str.replace("é", "e").str.replace("è", "e").str.replace("ê", "e").str.replace("ë", "e").str.replace("í", "i").str.replace("ì", "i").str.replace("î", "i").str.replace("ï", "i").str.replace("ó", "o").str.replace("ò", "o").str.replace("õ", "o").str.replace("ô", "o").str.replace("ö", "o").str.replace("ú", "u").str.replace("ù", "u").str.replace("û", "u").str.replace("ü", "u").str.replace("ç", "c")  # Remove espaços, acentos e coloca em formato título
     #
 
     df["estado"] = df["estado"].str.strip().str.upper()  # Remove espaços extras e converte para formato título
@@ -34,11 +33,11 @@ def limpar_dados(df):                                    # Função responsável
 
     #
 
-    df["marca"] = df["marca"].str.strip().str.upper()  # Remove espaços extras e converte para letras maiúsculas
+    df["marca"] = df["marca"].str.strip().str.upper().str.replace("á", "a").str.replace("à", "a").str.replace("ã", "a").str.replace("â", "a").str.replace("ä", "a").str.replace("é", "e").str.replace("è", "e").str.replace("ê", "e").str.replace("ë", "e").str.replace("í", "i").str.replace("ì", "i").str.replace("î", "i").str.replace("ï", "i").str.replace("ó", "o").str.replace("ò", "o").str.replace("õ", "o").str.replace("ô", "o").str.replace("ö", "o").str.replace("ú", "u").str.replace("ù", "u").str.replace("û", "u").str.replace("ü", "u").str.replace("ç", "c")  # Remove espaços extras e converte para letras maiúsculas
 
     #
 
-    df["categoria"] = df["categoria"].str.strip().str.title()  # Remove espaços extras e converte para formato título
+    df["categoria"] = df["categoria"].str.strip().str.title().str.replace("á", "a").str.replace("à", "a").str.replace("ã", "a").str.replace("â", "a").str.replace("ä", "a").str.replace("é", "e").str.replace("è", "e").str.replace("ê", "e").str.replace("ë", "e").str.replace("í", "i").str.replace("ì", "i").str.replace("î", "i").str.replace("ï", "i").str.replace("ó", "o").str.replace("ò", "o").str.replace("õ", "o").str.replace("ô", "o").str.replace("ö", "o").str.replace("ú", "u").str.replace("ù", "u").str.replace("û", "u").str.replace("ü", "u").str.replace("ç", "c")  # Remove espaços extras e converte para formato título
 
     #
 
@@ -56,15 +55,16 @@ def limpar_dados(df):                                    # Função responsável
 
     #
 
-    df["loja"] = df["loja"].str.strip().str.title()  # Remove espaços extras e converte para formato título
+    df["loja"] = df["loja"].str.strip().str.title().str.replace("á", "a").str.replace("à", "a").str.replace("ã", "a").str.replace("â", "a").str.replace("ä", "a").str.replace("é", "e").str.replace("è", "e").str.replace("ê", "e").str.replace("ë", "e").str.replace("í", "i").str.replace("ì", "i").str.replace("î", "i").str.replace("ï", "i").str.replace("ó", "o").str.replace("ò", "o").str.replace("õ", "o").str.replace("ô", "o").str.replace("ö", "o").str.replace("ú", "u").str.replace("ù", "u").str.replace("û", "u").str.replace("ü", "u").str.replace("ç", "c")  # Remove espaços extras e converte para formato título
 
     #
 
-    df["cidade_loja"] = df["cidade_loja"].str.strip().str.title()  # Remove espaços extras e converte para formato título
+    df["cidade_loja"] = df["cidade_loja"].str.strip().str.title().str.replace("á", "a").str.replace("à", "a").str.replace("ã", "a").str.replace("â", "a").str.replace("ä", "a").str.replace("é", "e").str.replace("è", "e").str.replace("ê", "e").str.replace("ë", "e").str.replace("í", "i").str.replace("ì", "i").str.replace("î", "i").str.replace("ï", "i").str.replace("ó", "o").str.replace("ò", "o").str.replace("õ", "o").str.replace("ô", "o").str.replace("ö", "o").str.replace("ú", "u").str.replace("ù", "u").str.replace("û", "u").str.replace("ü", "u").str.replace("ç", "c")  # Remove espaços extras e converte para formato título
 
     #
 
-    df["vendedor"] = df["vendedor"].str.strip().str.title()  # Remove espaços extras e converte para formato título
+    df["vendedor"] = df["vendedor"].str.strip().str.title().str.replace("á", "a").str.replace("à", "a").str.replace("ã", "a").str.replace("â", "a").str.replace("ä", "a").str.replace("é", "e").str.replace("è", "e").str.replace("ê", "e").str.replace("ë", "e").str.replace("í", "i").str.replace("ì", "i").str.replace("î", "i").str.replace("ï", "i").str.replace("ó", "o").str.replace("ò", "o").str.replace("õ", "o").str.replace("ô", "o").str.replace("ö", "o").str.replace("ú", "u").str.replace("ù", "u").str.replace("û", "u").str.replace("ü", "u").str.replace("ç", "c")  # Remove espaços extras e converte para formato título
+
 
     #
 
