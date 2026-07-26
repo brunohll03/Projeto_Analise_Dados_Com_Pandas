@@ -6,6 +6,7 @@
 from src.carregar_dados import carregar_dados        # Importa a função responsável por carregar os dados
 from src.limpar_dados import limpar_dados            # Importa a função responsável pela limpeza dos dados
 from src.analisar_dados import analisar_dados        # Importa a função responsável pela análise dos dados
+from src.visualizar_dados import visualizar_dados  # Importa a função responsável pelos gráficos
 
 df = carregar_dados()                                # Carrega os dados do arquivo CSV para um DataFrame
 
@@ -23,3 +24,5 @@ df.to_csv("data/processed/atendimentos_limpos.csv", index=False)  # Salva os dad
 print("\nDados limpos salvos com sucesso!")          # Informa que o arquivo foi salvo com sucesso
 
 analisar_dados(df)                                   # Executa a análise exploratória dos dados
+
+visualizar_dados(df)                                 # Executa a visualização dos dados com gráficos
