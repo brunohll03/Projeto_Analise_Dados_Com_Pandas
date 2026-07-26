@@ -1,29 +1,61 @@
-id,nome,idade,cidade,especialidade,status,email,telefone
-1,Bruno Lima,30.0,vinhedo,clinico geral,concluido,bruno.lima@email.com,11999990001
-2,Ana Souza,36.0,campinas,cardiologia,agendado,ana.souza@email.com,11999990002
-3,Carlos Mendes,40.0,jundiai,ortopedia,cancelado,carlos.mendes@email.com,11999990003
-4,Mariana Silva,35.0,valinhos,pediatria,concluido,mariana.silva@email.com,11999990004
-5,Joao Santos,52.0,campinas,cardiologia,concluido,joao.santos@email.com,11999990005
-6,Pedro Oliveira,28.0,campinas,cardiologia,concluido,pedro.oliveira@email.com,11999990006
-7,Juliana Costa,45.0,campinas,cardiologia,agendado,juliana.costa@email.com,11999990007
-8,Marcos Pereira,67.0,campinas,ortopedia,cancelado,marcos.pereira@email.com,11999990008
-9,Fernanda Alves,29.0,vinhedo,dermatologia,concluido,fernanda.alves@email.com,11999990009
-10,Rafael Souza,36.0,jundiai,cardiologia,agendado,rafael.souza@email.com,11999990010
-11,Patricia Lima,38.0,campinas,pediatria,concluido,patricia.lima@email.com,11999990011
-12,Gabriel Santos,36.0,valinhos,ortopedia,concluido,gabriel.santos@email.com,11999990012
-13,Beatriz Oliveira,22.0,vinhedo,dermatologia,cancelado,beatriz.oliveira@email.com,11999990013
-14,Lucas Ferreira,41.0,campinas,cardiologia,agendado,lucas.ferreira@email.com,11999990014
-15,Amanda Rodrigues,34.0,campinas,pediatria,concluido,amanda.rodrigues@email.com,11999990015
-16,Diego Martins,39.0,jundiai,ortopedia,concluido,diego.martins@email.com,11999990016
-17,Carolina Gomes,27.0,valinhos,dermatologia,cancelado,carolina.gomes@email.com,11999990017
-18,Thiago Alves,63.0,campinas,cardiologia,concluido,thiago.alves@email.com,11999990018
-19,Julio Santos,36.0,vinhedo,clinico geral,agendado,julio.santos@email.com,11999990019
-20,Renata Costa,31.0,campinas,pediatria,concluido,renata.costa@email.com,11999990020
-22,Roberto Lima,49.0,campinas,cardiologia,cancelado,roberto.lima@email.com,11999990021
-23,Isabela Mendes,26.0,vinhedo,dermatologia,agendado,isabela.mendes@email.com,11999990022
-24,Daniel Souza,58.0,campinas,cardiologia,concluido,daniel.souza@email.com,11999990023
-25,Vanessa Oliveira,36.0,valinhos,pediatria,agendado,vanessa.oliveira@email.com,11999990024
-26,Andre Pereira,36.0,campinas,ortopedia,concluido,andre.pereira@email.com,11999990025
-27,Paula Fernandes,43.0,vinhedo,dermatologia,concluido,paula.fernandes@email.com,11999990026
-28,Mateus Costa,19.0,campinas,clinico geral,cancelado,mateus.costa@email.com,11999990027
-30,Joana Alves,33.0,valinhos,pediatria,concluido,joana.alves@email.com,11999990028
+id_venda,nome_cliente,idade,cidade_cliente,estado,moto,marca,categoria,ano_moto,valor_moto,loja,cidade_loja,vendedor,status_venda,forma_pagamento,data_venda,email,telefone
+1,Bruno Lima,30,Vinhedo,SP,CB 500F,HONDA,Naked,2024,42500.0,Moto Center Campinas,Campinas,João Silva,CONCLUIDA,Financiamento,2026-01-15,bruno.lima@email.com,11999990001
+2,Ana Souza,36,Campinas,SP,NINJA 400,KAWASAKI,Esportiva,2023,35900.0,Moto Center Campinas,Campinas,Maria Oliveira,AGENDADA,Cartão,2026-01-20,ana.souza@email.com,11999990002
+3,Carlos Mendes,40,Jundiai,SP,MT-03,YAMAHA,Naked,2024,32490.0,Moto Center Jundiaí,Jundiai,Carlos Santos,CANCELADA,Financiamento,2026-02-05,carlos.mendes@email.com,11999990003
+4,Mariana Silva,35,Valinhos,SP,PCX 160,HONDA,Scooter,2025,21500.0,Moto Center Valinhos,Valinhos,Pedro Souza,CONCLUIDA,Pix,2026-02-10,mariana.silva@email.com,11999990004
+5,Joao Santos,52,Campinas,SP,VERSYS 650,KAWASAKI,Trail,2024,49900.0,Moto Center Campinas,Campinas,João Silva,CONCLUIDA,Financiamento,2026-02-15,joao.santos@email.com,11999990005
+6,Pedro Oliveira,28,Campinas,SP,CB 300F,HONDA,Naked,2025,29990.0,Moto Center Campinas,Campinas,Maria Oliveira,CONCLUIDA,Pix,2026-02-20,pedro.oliveira@email.com,11999990006
+7,Juliana Costa,45,Campinas,SP,FAZER 250,YAMAHA,Naked,2024,27500.0,Moto Center Campinas,Campinas,Maria Oliveira,AGENDADA,Cartão,2026-03-01,juliana.costa@email.com,11999990007
+8,Marcos Pereira,67,Campinas,SP,TÉNÉRÉ 700,YAMAHA,Trail,2023,68900.0,Moto Center Campinas,Campinas,Carlos Santos,CANCELADA,Financiamento,2026-03-05,marcos.pereira@email.com,11999990008
+9,Fernanda Alves,29,Vinhedo,SP,NMAX 160,YAMAHA,Scooter,2025,20900.0,Moto Center Vinhedo,Vinhedo,João Silva,CONCLUIDA,Pix,2026-03-10,fernanda.alves@email.com,11999990009
+10,Rafael Souza,36,Jundiai,SP,CB 650R,HONDA,Naked,2024,52990.0,Moto Center Jundiaí,Jundiai,Carlos Santos,AGENDADA,Financiamento,2026-03-15,rafael.souza@email.com,11999990010
+11,Patricia Lima,38,Campinas,SP,SH 150I,HONDA,Scooter,2024,18500.0,Moto Center Campinas,Campinas,Maria Oliveira,CONCLUIDA,Cartão,2026-03-20,patricia.lima@email.com,11999990011
+12,Gabriel Santos,36,Valinhos,SP,VERSYS 650,KAWASAKI,Trail,2024,49900.0,Moto Center Valinhos,Valinhos,Pedro Souza,CONCLUIDA,Financiamento,2026-04-01,gabriel.santos@email.com,11999990012
+13,Beatriz Oliveira,22,Vinhedo,SP,FAZER 250,YAMAHA,Naked,2024,27500.0,Moto Center Vinhedo,Vinhedo,João Silva,CANCELADA,Cartão,2026-04-05,beatriz.oliveira@email.com,11999990013
+14,Lucas Ferreira,41,Campinas,SP,CB 500X,HONDA,Trail,2025,45990.0,Moto Center Campinas,Campinas,Maria Oliveira,AGENDADA,Financiamento,2026-04-10,lucas.ferreira@email.com,11999990014
+15,Amanda Rodrigues,34,Campinas,SP,PCX 160,HONDA,Scooter,2025,21500.0,Moto Center Campinas,Campinas,Pedro Souza,CONCLUIDA,Pix,2026-04-15,amanda.rodrigues@email.com,11999990015
+16,Diego Martins,39,Jundiai,SP,MT-07,YAMAHA,Naked,2024,49990.0,Moto Center Jundiaí,Jundiai,Carlos Santos,CONCLUIDA,Financiamento,2026-04-20,diego.martins@email.com,11999990016
+17,Carolina Gomes,27,Valinhos,SP,NINJA 400,KAWASAKI,Esportiva,2023,35900.0,Moto Center Valinhos,Valinhos,Pedro Souza,CANCELADA,Cartão,2026-05-01,carolina.gomes@email.com,11999990017
+18,Thiago Alves,63,Campinas,SP,CB 500F,HONDA,Naked,2024,42500.0,Moto Center Campinas,Campinas,João Silva,CONCLUIDA,Financiamento,2026-05-05,thiago.alves@email.com,11999990018
+19,Julio Santos,36,Vinhedo,SP,NMAX 160,YAMAHA,Scooter,2025,20900.0,Moto Center Vinhedo,Vinhedo,João Silva,AGENDADA,Pix,2026-05-10,julio.santos@email.com,11999990019
+20,Renata Costa,31,Campinas,SP,SH 150I,HONDA,Scooter,2024,18500.0,Moto Center Campinas,Campinas,Maria Oliveira,CONCLUIDA,Cartão,2026-05-15,renata.costa@email.com,11999990020
+21,Mariana Silva,35,Valinhos,SP,PCX 160,HONDA,Scooter,2025,21500.0,Moto Center Valinhos,Valinhos,Pedro Souza,CONCLUIDA,Pix,2026-05-20,mariana.silva@email.com,11999990004
+22,Roberto Lima,49,Campinas,SP,CB 650R,HONDA,Naked,2024,52990.0,Moto Center Campinas,Campinas,João Silva,CANCELADA,Financiamento,2026-06-01,roberto.lima@email.com,11999990021
+23,Isabela Mendes,26,Vinhedo,SP,NMAX 160,YAMAHA,Scooter,2025,20900.0,Moto Center Vinhedo,Vinhedo,João Silva,AGENDADA,Pix,2026-06-05,isabela.mendes@email.com,11999990022
+24,Daniel Souza,58,Campinas,SP,CB 500X,HONDA,Trail,2025,45990.0,Moto Center Campinas,Campinas,Maria Oliveira,CONCLUIDA,Financiamento,2026-06-10,daniel.souza@email.com,11999990023
+25,Vanessa Oliveira,36,Valinhos,SP,PCX 160,HONDA,Scooter,2025,21500.0,Moto Center Valinhos,Valinhos,Pedro Souza,AGENDADA,Cartão,2026-06-15,vanessa.oliveira@email.com,11999990024
+26,Andre Pereira,36,Campinas,SP,MT-03,YAMAHA,Naked,2024,32490.0,Moto Center Campinas,Campinas,Maria Oliveira,CONCLUIDA,Financiamento,2026-06-20,andre.pereira@email.com,11999990025
+27,Paula Fernandes,43,Vinhedo,SP,FAZER 250,YAMAHA,Naked,2024,27500.0,Moto Center Vinhedo,Vinhedo,João Silva,CONCLUIDA,Pix,2026-07-01,paula.fernandes@email.com,11999990026
+28,Mateus Costa,19,Campinas,SP,CB 300F,HONDA,Naked,2025,29990.0,Moto Center Campinas,Campinas,Maria Oliveira,CANCELADA,Cartão,2026-07-05,mateus.costa@email.com,11999990027
+29,Lucas Ferreira,41,Campinas,SP,CB 500X,HONDA,Trail,2025,45990.0,Moto Center Campinas,Campinas,Maria Oliveira,AGENDADA,Financiamento,2026-07-10,lucas.ferreira@email.com,11999990014
+30,Joana Alves,33,Valinhos,SP,PCX 160,HONDA,Scooter,2025,21500.0,Moto Center Valinhos,Valinhos,Pedro Souza,CONCLUIDA,Pix,2026-07-15,joana.alves@email.com,11999990028
+31,Marcos Lima,45,Campinas,SP,MT-07,YAMAHA,Naked,2024,49990.0,Moto Center Campinas,Campinas,Carlos Santos,CONCLUIDA,Financiamento,2026-07-20,marcos.lima@email.com,11999990029
+32,Juliana Alves,29,Vinhedo,SP,NMAX 160,YAMAHA,Scooter,2025,20900.0,Moto Center Vinhedo,Vinhedo,João Silva,CONCLUIDA,Pix,2026-07-25,juliana.alves@email.com,11999990030
+33,Felipe Souza,17,Campinas,SP,CB 300F,HONDA,Naked,2025,29990.0,Moto Center Campinas,Campinas,Maria Oliveira,CONCLUIDA,Cartão,2026-07-30,felipe.souza@email.com,11999990031
+34,Carla Mendes,39,Campinas,SP,MT-03,YAMAHA,Naked,2024,32490.0,Moto Center Campinas,Campinas,Maria Oliveira,CONCLUIDA,Financiamento,2026-08-01,carla.mendes@email.com,11999990032
+35,Roberto Silva,44,Valinhos,SP,NINJA 400,KAWASAKI,Esportiva,2023,35900.0,Moto Center Valinhos,Valinhos,Pedro Souza,CANCELADA,Cartão,2026-08-05,roberto.silva@email.com,11999990033
+36,Aline Costa,32,Jundiai,SP,CB 500F,HONDA,Naked,2024,42500.0,Moto Center Jundiaí,Jundiai,Carlos Santos,CONCLUIDA,Financiamento,2026-08-10,aline.costa@email.com,11999990034
+37,Bruno Santos,37,Campinas,SP,CB 500X,HONDA,Trail,2025,45990.0,Moto Center Campinas,Campinas,João Silva,CONCLUIDA,Financiamento,2026-08-15,bruno.santos@email.com,11999990035
+38,Marina Oliveira,28,Vinhedo,SP,NMAX 160,YAMAHA,Scooter,2025,20900.0,Moto Center Vinhedo,Vinhedo,João Silva,AGENDADA,Pix,2026-08-20,marina.oliveira@email.com,11999990036
+39,Diego Costa,51,Campinas,SP,VERSYS 650,KAWASAKI,Trail,2024,49900.0,Moto Center Campinas,Campinas,Maria Oliveira,CONCLUIDA,Financiamento,2026-08-25,diego.costa@email.com,11999990037
+40,Paulo Henrique,42,Valinhos,SP,PCX 160,HONDA,Scooter,2025,21500.0,Moto Center Valinhos,Valinhos,Pedro Souza,CONCLUIDA,Pix,2026-08-30,paulo.henrique@email.com,11999990038
+41,Mariana Lima,36,Campinas,SP,MT-03,YAMAHA,Naked,2024,32490.0,Moto Center Campinas,Campinas,Maria Oliveira,CONCLUIDA,Financiamento,2026-09-05,mariana.lima@email.com,11999990039
+42,Gustavo Alves,33,Vinhedo,SP,FAZER 250,YAMAHA,Naked,2024,27500.0,Moto Center Vinhedo,Vinhedo,João Silva,CANCELADA,Cartão,2026-09-10,gustavo.alves@email.com,11999990040
+43,Renan Souza,47,Jundiai,SP,CB 650R,HONDA,Naked,2024,52990.0,Moto Center Jundiaí,Jundiai,Carlos Santos,CONCLUIDA,Financiamento,2026-09-15,renan.souza@email.com,11999990041
+44,Patricia Alves,41,Campinas,SP,SH 150I,HONDA,Scooter,2024,18500.0,Moto Center Campinas,Campinas,Maria Oliveira,AGENDADA,Cartão,2026-09-20,patricia.alves@email.com,11999990042
+45,Lucas Santos,26,Vinhedo,SP,NINJA 400,KAWASAKI,Esportiva,2023,35900.0,Moto Center Vinhedo,Vinhedo,João Silva,CONCLUIDA,Financiamento,2026-09-25,lucas.santos@email.com,11999990043
+46,Ana Carolina,34,Valinhos,SP,PCX 160,HONDA,Scooter,2025,21500.0,Moto Center Valinhos,Valinhos,Pedro Souza,CONCLUIDA,Pix,2026-09-30,ana.carolina@email.com,11999990044
+47,Marcelo Lima,55,Campinas,SP,MT-07,YAMAHA,Naked,2024,49990.0,Moto Center Campinas,Campinas,Carlos Santos,CONCLUIDA,Financiamento,2026-10-05,marcelo.lima@email.com,11999990045
+48,Carolina Souza,24,Vinhedo,SP,NMAX 160,YAMAHA,Scooter,2025,20900.0,Moto Center Vinhedo,Vinhedo,João Silva,AGENDADA,Pix,2026-10-10,carolina.souza@email.com,11999990046
+49,João Pedro,31,Campinas,SP,CB 300F,HONDA,Naked,2025,29990.0,Moto Center Campinas,Campinas,Maria Oliveira,CONCLUIDA,Cartão,2026-10-15,joao.pedro@email.com,11999990047
+50,Beatriz Lima,28,Valinhos,SP,NINJA 400,KAWASAKI,Esportiva,2023,35900.0,Moto Center Valinhos,Valinhos,Pedro Souza,CONCLUIDA,Financiamento,2026-10-20,beatriz.lima@email.com,11999990048
+51,Rafael Mendes,39,Campinas,SP,CB 500F,HONDA,Naked,2024,42500.0,Moto Center Campinas,Campinas,João Silva,CONCLUIDA,Financiamento,2026-10-25,rafael.mendes@email.com,11999990049
+52,Juliana Martins,43,Vinhedo,SP,FAZER 250,YAMAHA,Naked,2024,27500.0,Moto Center Vinhedo,Vinhedo,João Silva,CONCLUIDA,Pix,2026-10-30,juliana.martins@email.com,11999990050
+53,Carlos Oliveira,48,Jundiai,SP,CB 500X,HONDA,Trail,2025,45990.0,Moto Center Jundiaí,Jundiai,Carlos Santos,CANCELADA,Financiamento,2026-11-05,carlos.oliveira@email.com,11999990051
+54,Fernanda Lima,30,Campinas,SP,PCX 160,HONDA,Scooter,2025,21500.0,Moto Center Campinas,Campinas,Maria Oliveira,CONCLUIDA,Pix,2026-11-10,fernanda.lima@email.com,11999990052
+55,Marcos Souza,62,Vinhedo,SP,VERSYS 650,KAWASAKI,Trail,2024,49900.0,Moto Center Vinhedo,Vinhedo,João Silva,CONCLUIDA,Financiamento,2026-11-15,marcos.souza@email.com,11999990053
+56,Amanda Lima,33,Campinas,SP,MT-03,YAMAHA,Naked,2024,32490.0,Moto Center Campinas,Campinas,Maria Oliveira,AGENDADA,Cartão,2026-11-20,amanda.lima@email.com,11999990054
+57,Diego Souza,40,Valinhos,SP,CB 650R,HONDA,Naked,2024,52990.0,Moto Center Valinhos,Valinhos,Pedro Souza,CONCLUIDA,Financiamento,2026-11-25,diego.souza@email.com,11999990055
+58,Renata Lima,29,Vinhedo,SP,NMAX 160,YAMAHA,Scooter,2025,20900.0,Moto Center Vinhedo,Vinhedo,João Silva,CONCLUIDA,Pix,2026-11-30,renata.lima@email.com,11999990056
+59,Thiago Souza,46,Campinas,SP,MT-07,YAMAHA,Naked,2024,49990.0,Moto Center Campinas,Campinas,Carlos Santos,CONCLUIDA,Financiamento,2026-12-05,thiago.souza@email.com,11999990057
+60,Isabela Lima,25,Valinhos,SP,PCX 160,HONDA,Scooter,2025,21500.0,Moto Center Valinhos,Valinhos,Pedro Souza,CONCLUIDA,Pix,2026-12-10,isabela.lima@email.com,11999990058

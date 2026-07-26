@@ -5,29 +5,21 @@
 
 def analisar_dados(df):                                # Função responsável pela análise dos dados
 
-    print("Quantidade de registros:")                   # Exibe o título da quantidade de registros
+    print(df.head(5))                                  # Exibe as primeiras 5 linhas do DataFrame
 
-    print(len(df))                                      # Exibe a quantidade total de registros
+    #
 
+    print("\n\nInformações gerais sobre o DataFrame:") # Exibe o título
+    print(df.shape)                                    # Quantas linhas e colunas existem na nossa base?
 
-    print("\nDimensões do DataFrame:")                  # Exibe o título das dimensões do DataFrame
+    #
 
-    print(df.shape)                                     # Exibe a quantidade de linhas e colunas
+    print("\n\nResumo estatístico das colunas numéricas da nossa base:")  # Exibe o título
+    print(df.describe())                               # Exibe o resumo estatístico
 
+    #
 
-    print("\nColunas disponíveis:")                     # Exibe o título das colunas disponíveis
+    print("\n\nValores ausentes em cada coluna da nossa base:")          # Exibe o título
+    print(df.isnull().sum())                            # Exibe a quantidade de valores ausentes
 
-    print(df.columns)                                   # Exibe os nomes das colunas do DataFrame
-
-
-    print("\nTipos de dados:")                          # Exibe o título dos tipos de dados
-
-    print(df.dtypes)                                    # Exibe o tipo de dado de cada coluna
-
-
-    print("\nResumo estatístico:")                      # Exibe o título do resumo estatístico
-
-    print(df.describe())                               # Exibe estatísticas descritivas das colunas numéricas
-
-
-    return df                                           # Retorna o DataFrame analisado
+    return df
