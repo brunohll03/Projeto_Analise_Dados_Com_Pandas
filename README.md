@@ -53,7 +53,8 @@ projeto_analise_dados/
 │   │
 │   ├── utils/
 │   │   ├── __init__.py
-│   │   └── comparar_modelos.py
+│   │   ├── comparar_modelos.py
+│   │   └── interpretar_modelo.py
 │   │
 │   ├── __init__.py
 │   ├── carregar_dados.py
