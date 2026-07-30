@@ -29,20 +29,45 @@ projeto_analise_dados/
 │
 ├── data/
 │   ├── raw/
+│   │   └── atendimentos.csv
+│   │
 │   └── processed/
+│       └── atendimentos_limpos.csv
 │
 ├── notebooks/
 │
 ├── src/
+│   │
+│   ├── modelos/
+│   │   ├── __init__.py
+│   │   ├── prever_modelo.py
+│   │   ├── treinar_regressao_linear.py
+│   │   ├── treinar_decision_tree.py
+│   │   ├── treinar_random_forest.py
+│   │   ├── treinar_gradient_boosting.py
+│   │   ├── treinar_xgboost.py
+│   │   ├── treinar_regressao_logistica.py
+│   │   ├── treinar_decision_tree_classifier.py
+│   │   ├── treinar_random_forest_classifier.py
+│   │   └── treinar_xgboost_classifier.py
+│   │
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   └── comparar_modelos.py
+│   │
 │   ├── __init__.py
 │   ├── carregar_dados.py
 │   ├── limpar_dados.py
-│   └── analisar_dados.py
+│   ├── analisar_dados.py
+│   ├── visualizar_dados.py
+│   ├── preparar_modelo.py
+│   └── avaliar_modelo.py
 │
+├── .venv/ (ou venv/)
+├── .gitignore
 ├── main.py
-├── requirements.txt
 ├── README.md
-└── .gitignore
+└── requirements.txt
 ```
 
 ## Instalação
