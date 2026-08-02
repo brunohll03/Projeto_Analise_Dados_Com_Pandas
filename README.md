@@ -1,5 +1,5 @@
 
-# Projeto de Análise de Dados e Machine Learning - Previsão de Valor de Motos
+# Projeto de Análise de Dados e Machine Learning 
 
 Projeto desenvolvido para aprendizado de análise de dados, manipulação de informações e aplicação de modelos de Machine Learning utilizando Python.
 
