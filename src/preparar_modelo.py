@@ -29,4 +29,4 @@ def preparar_modelo(df):  # Função responsável por preparar os dados para o M
 
     X_teste_final = np.hstack((X_teste_numerico, X_teste_categorico))  # Nossos dados finais de teste (X_teste_final), juntando os dados numéricos e categóricos lado a lado (np.hstack)
 
-    return X_treino_final, X_teste_final, y_treino, y_teste, encoder  # Nossos resultados finais (return), retornando os dados preparados e nosso encoder que aprendeu as categorias (X_treino_final, X_teste_final, y_treino, y_teste, encoder)
+    return X_treino_final, X_teste_final, y_treino, y_teste  # Nossos resultados finais (return), retornando os dados preparados e nosso encoder que aprendeu as categorias (X_treino_final, X_teste_final, y_treino, y_teste, encoder)

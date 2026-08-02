@@ -1,12 +1,12 @@
 # Arquivo responsável por treinar o modelo Decision Tree.
 
-from sklearn.tree import DecisionTreeRegressor  # Nossa Árvore de Decisão (DecisionTreeRegressor), utilize perguntas para prever valores
+from sklearn.tree import DecisionTreeRegressor  # Nossa classe Decision Tree para regressão (DecisionTreeRegressor), utilizada para criar um modelo baseado em árvores de decisão
 
 
-def treinar_decision_tree(X_treino_final, y_treino):  # Nossa função (treinar_decision_tree), treine uma Árvore de Decisão
+def treinar_decision_tree(X_treino_final, y_treino):  # Nossa função para treinar o modelo Decision Tree (treinar_decision_tree), utilizando os dados preparados para treinamento (X_treino_final e y_treino)
 
-    modelo = DecisionTreeRegressor(random_state=42)  # Nosso modelo (modelo), utilize uma Árvore de Decisão (DecisionTreeRegressor) e mantenha resultados reproduzíveis (random_state=42)
+    modelo = DecisionTreeRegressor()  # Nosso modelo Decision Tree (modelo), crie uma árvore de decisão para prever valores numéricos
 
-    modelo.fit(X_treino_final, y_treino)  # Nosso modelo (modelo), aprenda utilizando os dados de treinamento (fit)
+    modelo.fit(X_treino_final, y_treino)  # Nosso treinamento do modelo (fit), ensine a árvore de decisão utilizando os dados de treinamento
 
-    return modelo  # Retorne nosso modelo treinado (modelo)
+    return modelo  # Nosso modelo treinado (modelo), retorne a árvore de decisão pronta para realizar previsões
